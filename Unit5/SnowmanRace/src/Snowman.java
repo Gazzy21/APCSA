@@ -11,15 +11,15 @@ public class Snowman {
         snowmanName = name;
     }
 
-    public move() {
-        x += Math.floor(Math.random() * 8) + 1
+    public void move() {
+        x += Math.floor(Math.random() * 8) + 1;
     }
 
-    public getName() {
+    public String getName() {
         return pictureFile;
     }
 
-    public getX() {
+    public double getX() {
         return x;
     }
 
