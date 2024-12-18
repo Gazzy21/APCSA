@@ -32,10 +32,12 @@ public class LineSegment {
     }
 
     public void String toString() {
-        
+        return ("(" + p1 + "," + p2 + ")" + " " + l1 + l2);
     }
 
     public double LengthofSegment() {
-        return 
+        double diffX = p1.getX() - p2.getX();
+        double diffY = p1.getY() - p2.getY();
+        return Math.sqrt(diffX * diffX + diffY * diffY);
     }
 }
