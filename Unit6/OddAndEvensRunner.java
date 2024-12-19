@@ -1,4 +1,4 @@
-public class OddAnEvensRunner
+public class OddAndEvensRunner
 {
 	public static void main( String args[] )
 	{

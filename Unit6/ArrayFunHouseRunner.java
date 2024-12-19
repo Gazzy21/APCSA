@@ -19,5 +19,7 @@ public class ArrayFunHouseRunner
 		System.out.println("sum of spots 2-9  =  " + ArrayFunHouse.getSum(two,2,9));
 		System.out.println("# of 4s  =  " + ArrayFunHouse.getCount(two,4));
 		System.out.println("# of 9s  =  " + ArrayFunHouse.getCount(two,9));
+		int[] a = ArrayFunHouse.removeVal(two, 9);
+		System.out.println("removing 9s = " + Arrays.toString(a));
 	}
 }

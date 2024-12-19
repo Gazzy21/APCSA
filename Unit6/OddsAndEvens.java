@@ -7,7 +7,8 @@ public class OddsAndEvens
 	//  elements are even.
 	private static int countEm(int[] array, boolean odd)
 	{
-		return 0;
+		int count = 0;
+        
 	}
 	
 	// use the method countEm in the next two methods
