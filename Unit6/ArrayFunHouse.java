@@ -6,7 +6,7 @@ public class ArrayFunHouse {
     public static int getSum(int[] numArray, int start, int stop) {
         int sum = 0;
         for (int i = start; i < stop; i++) {
-            sum += i;
+            sum += numArray[i];
         }
         return sum;
     }
@@ -14,23 +14,26 @@ public class ArrayFunHouse {
     // getCount() will return number of times val is present
     public static int getCount(int[] numArray, int val) {
         int count = 0;
-        if (val == 4) {
-            for (int i = 0; i < numArray.length - 1; i++) {
-                if (i == 4) {
-                    count++;
-                }
-            }
-        } else if (val == 9) {
-            for (int i = 0; i < numArray.length - 1; i++) {
-                if (i == 9) {
-                    count++;
-                }
+        for(int i = 0; i < numArray.length; i++) {
+            if(numArray[i] == val) {
+                count++;
             }
         }
         return count;
     }
 
     public static int[] removeVal(int[] numArray, int val) {
-        return null;
+        int num_val = getCount(numArray, val);
+
+        int [] r_arr = new int[numArray.length - num_val];
+
+        int r_index = 0;
+        for(int i = 0; i < numArray.length; i++) {
+            if( numArray[i] != val) {
+                r_arr[r_index] = numArray[i];
+                r_index++;
+            }
+        }
+        return r_arr;
     }
 }
