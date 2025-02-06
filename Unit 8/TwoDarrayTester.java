@@ -6,10 +6,10 @@ public class TwoDarrayTester {
                 { 0, -5, 6, 12 } };
 
         // call sumColumn to sum up each column
-        int sumFirstCol = sumColumn(my2Darr, 1); // *****fill in parameters to pass to the method
-        int sumSecondCol = sumColumn(my2Darr, 2);
-        int sumThirdCol = sumColumn(my2Darr, 3);
-        int sumFourthCol = sumColumn(my2Darr, 4);
+        int sumFirstCol = sumColumn(my2Darr, 0); // *****fill in parameters to pass to the method
+        int sumSecondCol = sumColumn(my2Darr, 1);
+        int sumThirdCol = sumColumn(my2Darr, 2);
+        int sumFourthCol = sumColumn(my2Darr, 3);
 
         System.out.println(
                 "The sum of the elements in the 1st column should be 2 \t the method returned: " + sumFirstCol);
@@ -23,9 +23,9 @@ public class TwoDarrayTester {
         System.out.println();
 
         // *****write code to call sumRow for each row
-		int sumFirstRow = sumRow(my2Darr, 1);
-		int sumSecondRow = sumRow(my2Darr, 2);
-		int sumThirdRow = sumRow(my2Darr, 3);
+		int sumFirstRow = sumRow(my2Darr, 0);
+		int sumSecondRow = sumRow(my2Darr, 1);
+		int sumThirdRow = sumRow(my2Darr, 2);
 		
 		
 		System.out.println("The sum of the elements in the 1st row should be 10 \t the method returned: " + sumFirstRow);
