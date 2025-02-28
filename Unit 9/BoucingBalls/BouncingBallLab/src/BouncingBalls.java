@@ -8,8 +8,9 @@ public class BouncingBalls {
     public BouncingBalls(int w, int h) {
         width = w;
         height = h;
-        balls = new Ball[1];
+        balls = new Ball[2];
         balls[0] = new Ball(50, 50, Color.BLUE);
+        balls[1] = new ColorfulBall(10, 10, 20, 5, 8);
 
     }
 
@@ -37,7 +38,7 @@ public class BouncingBalls {
 
             // display and pause for 50 ms
             StdDraw.show();
-            StdDraw.pause(1); // this controls speed
+            StdDraw.pause(50); // this controls speed
             court.moveBalls();
             // set the background to light gray to erase
             StdDraw.clear(StdDraw.LIGHT_GRAY); // set every pixel

@@ -20,7 +20,7 @@ public class Ball {
      * yStep = 3 using other constructor (this)
      */
     public Ball() {
-
+        this(0, 0, 10, 5, 3, Color.BLACK);
     }
 
     /**
@@ -66,11 +66,11 @@ public class Ball {
         // bounce off wall according to law of elastic collision
         if (Math.abs(xLoc + xStep) + radius > width) {
             xStep = -xStep;
-            StdAudio.play("mariocoin.wav");
+            StdAudio.play("pong.wav");
         }
         if (Math.abs(yLoc + yStep) + radius > height) {
             yStep = -yStep;
-            StdAudio.play("mariocoin.wav");
+            StdAudio.play("pong.wav");
         }
 
         xLoc += xStep; // move the location of ball
