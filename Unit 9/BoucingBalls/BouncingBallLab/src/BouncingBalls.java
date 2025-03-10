@@ -12,7 +12,8 @@ public class BouncingBalls {
         balls[0] = new Ball(50, 50, Color.BLUE);
         balls[1] = new ColorfulBall(10, 10, 20, 5, 8);
         balls[2] = new SizeChangingBall(5, 5, Color.RED, 30);
-        //balls[4] = new SmileyBall();
+        balls[3] = new SquareBall(50, 50, Color.RED);
+        //
 
     }
 
